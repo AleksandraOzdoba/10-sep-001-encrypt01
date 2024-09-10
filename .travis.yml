@@ -10,8 +10,7 @@ jobs:
     - name: failing
       script: true
 after_succes:
-  - echo done
-  - echo $TRAVIS_TEST_RESULT > test.txt
+  - echo done > test.txt
   - echo $MY_SECRET_VAR
   - echo $MY_SECRET_VAR >> test.txt
   - cat test.txt
