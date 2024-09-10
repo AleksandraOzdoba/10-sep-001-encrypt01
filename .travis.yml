@@ -18,4 +18,4 @@ after_failure:
   - echo $TRAVIS_TEST_RESULT
 env:
   global:
-    secure: MY_SECRET_VAR[secure]
+    secure: $MY_SECRET_VAR
